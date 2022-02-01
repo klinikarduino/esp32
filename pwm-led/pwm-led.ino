@@ -17,14 +17,14 @@ void setup()
 
 void loop()
 {
-  // Increase brightness LED
+  // Decrease brightness LED (active-low LED)
   for (int i = 0; i <= 1023; i += 20)
   {
     ledcWrite(channel, i);
     delay(25);
   }
   
-  // Decrease brightness LED
+  // Increase brightness LED (active-low LED)
   for (int i = 1023; i >= 0; i -= 20)
   {
     ledcWrite(channel, i);
