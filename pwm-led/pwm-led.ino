@@ -1,5 +1,5 @@
 // LED pin
-#define LEDPIN  2
+#define LEDPIN  25
 
 // Parameter untuk PWM
 const int channel = 0;
