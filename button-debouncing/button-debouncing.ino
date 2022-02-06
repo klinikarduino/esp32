@@ -27,11 +27,7 @@ void loop()
   // Membaca state button kemudian disimpan pada variable
   int reading = digitalRead(BTNPIN);
 
-  // Check to see if you just pressed the button
-  // (i.e. the input went from LOW to HIGH), and you've waited long enough
-  // since the last press to ignore any noise
-
-  // Jika nilai button berubah, karenan noise atau penekanan
+  // Jika nilai button berubah, karena noise atau penekanan
   if (reading != last_button_state)
   {
     // Simpan nilai milis
